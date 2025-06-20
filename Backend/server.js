@@ -138,5 +138,5 @@ app.delete('/api/leave-requests', async (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server running at http://16.16.64.41:${port}`);
+    console.log(`Server running at http://51.21.244.195:${port}`);
 });
