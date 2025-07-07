@@ -5,7 +5,7 @@ services:
     build: ./Backend
     container_name: leave-backend53
     ports:
-      - "3023:3023"
+      - "3202:3202"
     depends_on:
       - postgres
     environment:
@@ -21,7 +21,7 @@ services:
     build: ./Employee-leave
     container_name: leave-employee53
     ports:
-      - "8041:80"
+      - "8004:80"
     depends_on:
       - backend
 
@@ -29,7 +29,7 @@ services:
     build: ./HR-leave
     container_name: leave-hr53
     ports:
-      - "8042:80"
+      - "8005:80"
     depends_on:
       - backend
 
@@ -37,7 +37,7 @@ services:
     image: postgres:13
     container_name: leave-db53
     ports:
-      - "5418:5432"
+      - "5202:5432"
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=admin123
